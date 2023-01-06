@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* Banner Styles */
+
+header {
+    height: 90vh;
+    width: 100%;
+
+}
+
+.banner {
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+
+    background-image: url('../images/banner/banner1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-content {
+    margin: 150px 100px 300px 550px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-title {
+    font-size: 45px;
+    text-align: right;
+    color: #151414;
+}
+
+.banner-description {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    text-align: right;
+    margin: 26px 0;
+    color: #444343;
+}
+
+.contact-btn {
+    height: 60px;
+    width: 140px;
+    margin-left: 58%;
+    background-color: #F15B22;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    border: 0;
+    border-radius: 5px;
+    font-size: 17px;
+
+}
+
+.contact-btn:hover {
+    background-color: transparent;
+    color: #F15B22;
+    border: 1px solid #F15B22;
+}
+
+/* Banner Styles end*/
+
+/* Personal info */
+.personal-info {
+    display: flex;
+    gap: 50px;
+
+}
+
+.info-picture {
+    margin-top: 25px;
+}
+
+.info-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 170px;
+}
+
+.info-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #151414;
+    margin-bottom: 33px;
+}
+
+.info-description {
+    font-size: 15px;
+    line-height: 20px;
+    color: #444343;
+    margin-right: 100px;
+    margin-bottom: 14px;
+}
+
+.info-item {
+    font-size: 15px;
+    line-height: 26px;
+    color: #444343;
+}
+
+.fa-check {
+    color: #16D887;
+    height: 24px;
+    width: 24px;
+}
+
+/* Personal info ends */
+
+/* My plans */
+
+.my-plans {
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+}
+
+.plans-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #151414;
+    margin: 80px;
+}
+
+.plans-container {
+    display: flex;
+    gap: 80px;
+}
+
+.plan {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plan img {
+    height: 75px;
+    width: 75px;
+    margin-bottom: 15px;
+}
+
+.plan-name {
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    color: #151414;
+}
+
+.plan-sub-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 29px;
+    text-align: center;
+    color: #737272;
+}
+
+/* My plans */
+
+/* My projects */
+
+.projects {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.projects-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #151414;
+    margin-top: 80px;
+}
+
+.project img {
+    height: 80%;
+    width: 100%;
+
+
+}
+
+.project img:hover {
+    transform: scale(1.1);
+
+}
+
+.projects-container {
+    display: flex;
+    gap: 24px;
+    margin: 50px;
+}
+
+.project {
+    height: 270px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: #737272;
+    overflow: hidden;
+}
+
+.project-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.project-title {
+    font-weight: 600;
+    font-size: 25px;
+    -webkit-text-stroke: 1px #F15B22;
+    margin-top: 12px;
+    color: transparent;
+    letter-spacing: 5px;
+}
+
+/* My projects */
+
+/* Card section */
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+}
+
+.card {
+    background-image: linear-gradient(90deg, #F15B22 0%, rgba(241, 91, 34, 0) 100%), url('../images/watch.png') ;
+    width: 70%;
+    height: 40%;
+    background-size: 100% 100%, 100% 100%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, right;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 40px 60px;
+
+}
+
+.card-btn {
+    height: 70px;
+    width: 120px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px 0;
+    color: #F15B22;
+    font-weight: 600;
+    text-align: center;
+    border: 0;
+    border-radius: 5px;
+    font-size: 17px;
+    
+}
+.card-btn:hover{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+.card-title{
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 47px;
+    color: #fff;
+    margin-bottom: 25px;
+}
+/* Card section */
