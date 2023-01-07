@@ -21,19 +21,22 @@ header {
     height: 100%;
     width: 100%;
     display: flex;
-
+    align-content: flex-end;
+    flex-flow: column wrap;
 
     background-image: url('../images/banner/banner1.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.banner-content {
+.banner-content{
     margin: 150px 100px 300px 550px;
     height: 100%;
-    width: 100%;
+    width: 40%;
     display: flex;
     flex-direction: column;
+    flex-flow: column wrap;
+    align-content: flex-end;
 }
 
 .banner-title {
@@ -53,7 +56,7 @@ header {
 
 .contact-btn {
     height: 60px;
-    width: 140px;
+    
     margin-left: 58%;
     background-color: #F15B22;
     color: #fff;
@@ -62,6 +65,7 @@ header {
     border: 0;
     border-radius: 5px;
     font-size: 17px;
+   
 
 }
 
@@ -176,8 +180,16 @@ header {
 
 .projects {
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-image: url('../images/gradient1.png');
+    background-color: #151414;
+    background-blend-mode: screen;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 60px 0;
 
 }
 
@@ -187,6 +199,21 @@ header {
     line-height: 47px;
     color: #151414;
     margin-top: 80px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 50px auto;
+}
+
+.project {
+    height: 270px;
+    width: 25%;
+    border-radius: 10px;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0)  0%, #227cf1 100%);
+    overflow: hidden;
 }
 
 .project img {
@@ -201,19 +228,6 @@ header {
 
 }
 
-.projects-container {
-    display: flex;
-    gap: 24px;
-    margin: 50px;
-}
-
-.project {
-    height: 270px;
-    width: 300px;
-    border-radius: 10px;
-    background-color: #737272;
-    overflow: hidden;
-}
 
 .project-footer {
     display: flex;
@@ -225,10 +239,9 @@ header {
 .project-title {
     font-weight: 600;
     font-size: 25px;
-    -webkit-text-stroke: 1px #F15B22;
     margin-top: 12px;
-    color: transparent;
-    letter-spacing: 5px;
+    color: #151414;
+    letter-spacing: 4px;
 }
 
 /* My projects */
@@ -236,6 +249,7 @@ header {
 /* Card section */
 
 .card-container {
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -244,42 +258,107 @@ header {
 }
 
 .card {
-    background-image: linear-gradient(90deg, #F15B22 0%, rgba(241, 91, 34, 0) 100%), url('../images/watch.png') ;
+    background-image: linear-gradient(90deg, #F15B22 0%, rgba(241, 91, 34, 0) 100%), url('../images/watch.png');
     width: 70%;
     height: 40%;
     background-size: 100% 100%, 100% 100%;
-    background-repeat: no-repeat, no-repeat;
-    background-position: center, right;
     display: flex;
     flex-direction: column;
     padding: 40px 40px 60px;
+    border-radius: 10px;
 
 }
 
 .card-btn {
-    height: 70px;
+    height: 60px;
     width: 120px;
     margin-bottom: 20px;
     background-color: #fff;
-    padding: 20px 0;
+    padding: 15px 0;
     color: #F15B22;
     font-weight: 600;
     text-align: center;
     border: 0;
     border-radius: 5px;
     font-size: 17px;
-    
+
 }
-.card-btn:hover{
+
+.card-btn:hover {
     background-color: transparent;
     color: #fff;
     border: 2px solid #fff;
 }
-.card-title{
+
+.card-title {
     font-weight: 700;
     font-size: 35px;
     line-height: 47px;
     color: #fff;
     margin-bottom: 25px;
 }
+
 /* Card section */
+
+/* Footer */
+
+.main-footer {
+    display: flex;
+    gap: 30px;
+    color: #fff;
+    background-color: #151414;
+    padding-bottom: 100px;
+}
+
+.footer1 {
+    display: flex;
+    flex-direction: column;
+    margin: 80px 0 15px 100px;
+  
+    width: 50%;
+}
+
+.footer1-title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 47px;
+
+}
+
+.footer-description {
+    width: 80%;
+}
+.footer1 a, .footer1 p{
+    text-decoration: none;
+    font-size: 15px;
+    margin: 15px 0;
+    color: #e7e7e7;
+}
+.social-icons img{ 
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+.footer2{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 80px 0 15px 0px;
+    
+}
+.footer2 form .subscribe{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.footer2 form input[type="email"]{
+    height: 50px;
+    width: 60%;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 2px double #444343;
+    color: #737272;
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: 500;
+}
+/* Footer */
